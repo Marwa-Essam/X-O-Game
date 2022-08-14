@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="#4203d0"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/raw1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/tvp2">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/raw2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/raw1">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/raw3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/raw2">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2bd003"
+            android:onClick="onPlayClick"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/namep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Player X: "
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text=" 0 "
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@id/namep1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Player O: "
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namep1" />
+
+    <TextView
+        android:id="@+id/tvp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text=" 0 "
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintStart_toEndOf="@id/namep2"
+        app:layout_constraintTop_toBottomOf="@id/tvp1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
